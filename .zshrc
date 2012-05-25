@@ -28,16 +28,6 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl:~/bin:.
 
-alias c="clear"
-alias gp="git pull origin master"
-alias gpp="git push origin master"
-alias gs="git status"
-alias school="ssh ect-unix.ecst.csuchico.edu"
-alias la="ls -al"
-alias battery="acpitool"
-alias acpitools="acpitool"
-alias suspend="sudo acpitool -s"
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
