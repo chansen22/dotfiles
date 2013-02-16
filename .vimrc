@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'vim-scripts/vimwiki'
 
 "load ftplugins and indent files
 filetype plugin on
