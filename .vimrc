@@ -1,23 +1,9 @@
 "Use vim settings in place of vi
 set nocompatible
 
-"Vundle configuration
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-"Github bundles:
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/nerdtree'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'vim-scripts/vimwiki'
-
 "load ftplugins and indent files
 filetype plugin on
 filetype indent on
-
-"Nerd Tree
-map <C-f> :NERDTreeToggle<CR>
 
 "General Options
 syntax on
