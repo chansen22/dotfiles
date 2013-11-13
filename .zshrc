@@ -30,6 +30,7 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bi
 
 # Aliases
 alias gst='git status -sb'
+alias xt='xcodebuild -alltargets -configuration Release clean build'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 

@@ -1,15 +1,14 @@
-[core]
-  whitespace = trailing-space,space-before-tab
-  excludesfile = /Users/cthansen/.global_gitignore
-  editor = vim
-
 [user]
   name = Chris Hansen
-  email = moosekid5@gmail.com
-
-[push]
-  default = upstream
-
+  email = chansen@wanderful.com
+[core]
+  excludesfile = /Users/cthansen/.gitignore_global
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 [alias]
   ca = commit --amend
   cached = diff --cached
@@ -18,15 +17,12 @@
   l = log --decorate --stat
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   s = status
-
+[push]
+  default = upstream
 [color]
   ui = true
-
 [log]
   decorate = short
-
-[credential]
-  helper = osxkeychain
-
 [github]
   user = bafipawi
+

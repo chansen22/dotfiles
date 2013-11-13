@@ -20,7 +20,6 @@ filetype indent on
 map <C-f> :NERDTreeToggle<CR>
 
 "General Options
-colorscheme badwolf
 syntax on
 set showcmd
 set showmode
