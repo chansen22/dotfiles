@@ -26,7 +26,8 @@ plugins=(git,ruby)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl:~/bin:.
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl:~/bin:."
+export EDITOR=vim
 
 # Vi mode
 set -o vi
@@ -35,8 +36,29 @@ set -o vi
 alias gst='git status -sb'
 alias xt='xcodebuild -alltargets -configuration Release clean build'
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
+alias uv="cd ~/mobile/iphone/UberVoice/"
+alias uc="cd ~/mobile/iphone/UberConference"
+alias s="cd ~/DMHelper"
+alias mm="cd ~/MonsterManager"
+alias pu="pod update"
+alias bu="brew update; brew upgrade; brew doctor"
+alias dev="git checkout master"
+alias gc="git checkout"
+alias gp="git push origin"
+alias gs="git status"
+alias cya="sudo reboot"
+alias stash="git stash"
+alias pop="git pop"
+alias grhh="git reset --hard HEAD"
+alias co="git checkout"
+alias tf="fastlane tf_chris"
+alias deploy="fastlane deploy"
+alias gc="git commit"
+alias fixxvim="security find-identity -v -p codesigning | head -1 | sed 's/1) //g' | sed 's/ //g' | sed 's/\".*//g'"
+alias resign="sudo codesign -f -s `fixxvim` /Applications/Xcode.app"
 
-# Ruby
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH="$HOME/.fastlane/bin:$PATH"
