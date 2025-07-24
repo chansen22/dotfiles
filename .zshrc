@@ -11,7 +11,7 @@ ZSH_THEME="agnoster"
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
@@ -36,30 +36,22 @@ set -o vi
 alias gst='git status -sb'
 alias xt='xcodebuild -alltargets -configuration Release clean build'
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
-alias uv="cd ~/mobile/iphone/UberVoice/"
-alias uc="cd ~/mobile/iphone/UberConference"
-alias s="cd ~/DMHelper"
-alias mm="cd ~/MonsterManager"
-alias pu="pod update"
 alias bu="brew update; brew upgrade; brew doctor"
-alias dev="git checkout master"
+alias dev="git checkout main"
 alias gc="git checkout"
-alias gp="git push origin"
-alias grm="git fetch; git rebase origin/master"
+alias gp="git push -u origin"
+alias grm="git fetch; git rebase origin/main"
 alias gs="git status"
 alias cya="sudo reboot"
 alias stash="git stash"
 alias pop="git pop"
 alias grhh="git reset --hard HEAD"
+alias grc="git rebase --continue"
+alias gra="git rebase --abort"
 alias co="git checkout"
-alias tf="fastlane tf_chris"
-alias deploy="fastlane deploy"
 alias gc="git commit"
-alias fixxvim="security find-identity -v -p codesigning | head -1 | sed 's/1) //g' | sed 's/ //g' | sed 's/\".*//g'"
-alias resign="sudo codesign -f -s `fixxvim` /Applications/Xcode.app"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+alias gb="git branch"
+alias gf="git fetch"
+alias gpf="git push --force"
 
 export PATH="$HOME/.fastlane/bin:$PATH"
